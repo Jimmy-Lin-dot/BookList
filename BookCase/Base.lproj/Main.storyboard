@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Index View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="indexController" id="BYZ-38-t0r" customClass="IndexViewController" customModule="BookCase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歡迎光臨我的書櫃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rz0-uG-kuR">
+                                <rect key="frame" x="85.5" y="430" width="243" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rz0-uG-kuR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k3u-qw-O4O"/>
+                            <constraint firstItem="Rz0-uG-kuR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="n3m-r7-AEh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-419" y="21"/>
+        </scene>
+        <!--Book View Controller-->
+        <scene sceneID="lVa-ZR-ekO">
+            <objects>
+                <viewController storyboardIdentifier="bookViewController" modalPresentationStyle="fullScreen" id="KtN-9e-drf" customClass="BookViewController" customModule="BookCase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pyo-kK-K6s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的書櫃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0X-Ca-hdN">
+                                <rect key="frame" x="158.5" y="54" width="97.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Zpo-V4-a5B">
+                                <rect key="frame" x="10" y="93" width="394" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mNn-wU-EWF">
+                                    <size key="itemSize" width="189" height="215"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BookCell" id="awX-jC-1c3" customClass="BookCollectionViewCell" customModule="BookCase" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="189" height="215"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WMK-I1-rgD">
+                                            <rect key="frame" x="0.0" y="0.0" width="189" height="215"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZ3-9N-JOR">
+                                                    <rect key="frame" x="0.0" y="165" width="189" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="vuM-Tk-xBC"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q83-og-i9E">
+                                                    <rect key="frame" x="0.0" y="0.0" width="189" height="165"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wve-gJ-anu">
+                                                    <rect key="frame" x="122.5" y="10" width="56.5" height="56.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Wve-gJ-anu" secondAttribute="height" multiplier="1:1" id="q8t-BD-wQS"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="lZ3-9N-JOR" secondAttribute="bottom" id="1ae-ey-6k5"/>
+                                                <constraint firstAttribute="trailing" secondItem="Q83-og-i9E" secondAttribute="trailing" id="2zJ-mF-eXY"/>
+                                                <constraint firstItem="lZ3-9N-JOR" firstAttribute="leading" secondItem="WMK-I1-rgD" secondAttribute="leading" id="3ZB-lj-Z6w"/>
+                                                <constraint firstItem="Q83-og-i9E" firstAttribute="top" secondItem="WMK-I1-rgD" secondAttribute="top" id="RTV-XX-Ulx"/>
+                                                <constraint firstItem="Wve-gJ-anu" firstAttribute="width" secondItem="Q83-og-i9E" secondAttribute="width" multiplier="0.3" id="UBd-DI-w3f"/>
+                                                <constraint firstItem="Wve-gJ-anu" firstAttribute="top" secondItem="WMK-I1-rgD" secondAttribute="top" constant="10" id="gB9-hf-dne"/>
+                                                <constraint firstAttribute="trailing" secondItem="lZ3-9N-JOR" secondAttribute="trailing" id="n8j-Yi-bTB"/>
+                                                <constraint firstItem="Q83-og-i9E" firstAttribute="leading" secondItem="WMK-I1-rgD" secondAttribute="leading" id="rom-CF-zO2"/>
+                                                <constraint firstAttribute="trailing" secondItem="Wve-gJ-anu" secondAttribute="trailing" constant="10" id="xsn-IA-cU5"/>
+                                                <constraint firstItem="lZ3-9N-JOR" firstAttribute="top" secondItem="Q83-og-i9E" secondAttribute="bottom" id="zmD-A0-H0C"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="189" height="215"/>
+                                        <connections>
+                                            <outlet property="bookImage" destination="Q83-og-i9E" id="0lv-Im-vjW"/>
+                                            <outlet property="bookTitle" destination="lZ3-9N-JOR" id="t80-x9-dPe"/>
+                                            <outlet property="isFavoriteIcon" destination="Wve-gJ-anu" id="wBP-VK-d6N"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="KtN-9e-drf" id="ex5-VH-ude"/>
+                                    <outlet property="delegate" destination="KtN-9e-drf" id="CPD-fG-Hzi"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cds-n9-HPF"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zpo-V4-a5B" firstAttribute="leading" secondItem="cds-n9-HPF" secondAttribute="leading" constant="10" id="5gS-Er-9VZ"/>
+                            <constraint firstItem="Zpo-V4-a5B" firstAttribute="top" secondItem="K0X-Ca-hdN" secondAttribute="bottom" constant="10" id="BKc-JZ-KCS"/>
+                            <constraint firstItem="cds-n9-HPF" firstAttribute="bottom" secondItem="Zpo-V4-a5B" secondAttribute="bottom" id="TXv-g5-cxV"/>
+                            <constraint firstAttribute="trailing" secondItem="Zpo-V4-a5B" secondAttribute="trailing" constant="10" id="hWw-Lk-rb9"/>
+                            <constraint firstItem="K0X-Ca-hdN" firstAttribute="top" secondItem="cds-n9-HPF" secondAttribute="top" constant="10" id="np6-lV-6GV"/>
+                            <constraint firstItem="K0X-Ca-hdN" firstAttribute="centerX" secondItem="pyo-kK-K6s" secondAttribute="centerX" id="s1Y-mV-3LV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bookCollectionView" destination="Zpo-V4-a5B" id="zf1-oG-Hcv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oEq-ju-fP7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="442.02898550724643" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

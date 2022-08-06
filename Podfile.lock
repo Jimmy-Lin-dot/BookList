@@ -1,0 +1,41 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
+  - PromiseKit/Alamofire (6.18.0):
+    - Alamofire (~> 4.0)
+    - PromiseKit/CorePromise
+  - PromiseKit/CorePromise (6.18.0)
+  - SQLite.swift (0.12.2):
+    - SQLite.swift/standard (= 0.12.2)
+  - SQLite.swift/standard (0.12.2)
+  - SwiftyJSON (4.3.0)
+  - Toast-Swift (4.0.1)
+
+DEPENDENCIES:
+  - AlamofireImage (~> 3.3)
+  - PromiseKit/Alamofire (~> 6.0)
+  - SQLite.swift (~> 0.12.0)
+  - SwiftyJSON (~> 4.0)
+  - Toast-Swift (~> 4.0.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - PromiseKit
+    - SQLite.swift
+    - SwiftyJSON
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
+  PromiseKit: 879fa89b55fcb8f11ade9aad0c9721850bb71b9f
+  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  Toast-Swift: e42a638589a2f95036b4bb7626cfbdde7daf0393
+
+PODFILE CHECKSUM: 2b5077fae1b602ce79fd6093c1edeac15aac3fed
+
+COCOAPODS: 1.11.3
