@@ -42,7 +42,7 @@ extension BookViewController : UICollectionViewDataSource {
             bookCell.bookTitle.text = bookCellItem.title
             bookCell.bookDetail = bookCellItem
             bookCell.isFavorite = bookCellItem.isFavorite
-            bookCell.isFavoriteIcon.image = bookCellItem.isFavorite ? UIImage(named: "heart") : UIImage(named: "love")
+            bookCell.isFavoriteIcon.image = bookCellItem.isFavorite ? UIImage(named: "icon_heart_active") : UIImage(named: "icon_heart_inactive")
             
             return bookCell
         }

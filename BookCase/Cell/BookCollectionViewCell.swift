@@ -23,10 +23,10 @@ class BookCollectionViewCell: UICollectionViewCell {
         let dbModel = DataBaseModel()
         if self.isFavorite {
             // 原本是已收藏，改成未收藏
-            self.isFavoriteIcon.image = UIImage(named: "love")
+            self.isFavoriteIcon.image = UIImage(named: "icon_heart_inactive")
         } else {
             // 原本是未收藏，改成已收藏
-            self.isFavoriteIcon.image = UIImage(named: "heart")
+            self.isFavoriteIcon.image = UIImage(named: "icon_heart_active")
         }
         
         self.isFavorite = !self.isFavorite
